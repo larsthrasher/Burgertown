@@ -87,7 +87,7 @@ class ContactData extends Component {
                         {value: 'pickup', displayValue: 'pickup'}
                     ]
                 },
-                value: '',
+                value: 'delivery',
                 validation: {},
                 valid: true
             }
@@ -190,9 +190,9 @@ class ContactData extends Component {
 
 const mapStateToProps = state => {
   return {
-    ings: state.ingredients,
-    price: state.totalPrice,
-    loading: state.loading
+    ings: state.burgerBuilder.ingredients,
+    price: state.burgerBuilder.totalPrice,
+    loading: state.order.loading
   }
 };
 
